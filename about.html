@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Éclair &amp; Crumb</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">Éclair &amp; Crumb</div>
+        <nav class="nav">
+          <a href="index.html#hero">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu-full.html">Menu</a>
+          <a href="index.html#visit">Visit</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow">About Éclair &amp; Crumb</p>
+            <h1>Slow baking, warm hospitality.</h1>
+            <p class="hero-subtitle">
+              We are a small neighbourhood pastry cafe in Indiranagar, Bangalore,
+              inspired by classic French techniques and Indian flavours.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu">
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">Our Story</p>
+            <h2>From early-morning dough to evening chai.</h2>
+            <p class="section-subtitle">
+              Every batch begins long before sunrise, with butter, flour, and a
+              lot of patience.
+            </p>
+          </header>
+
+          <div class="visit-inner">
+            <div>
+              <p>
+                Éclair &amp; Crumb started as a home oven and a notebook of
+                family recipes. What began as weekend bakes for friends slowly
+                turned into a tiny pastry counter, then a cozy cafe on a quiet
+                Indiranagar street.
+              </p>
+              <p>
+                Our menu is intentionally small, so we can give each piece the
+                time it deserves. You will find classic viennoiserie alongside
+                flavours like cardamom, saffron, jaggery, and filter coffee —
+                all made in small batches, with ingredients we are proud to list
+                out loud.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit">
+        <div class="container visit-inner">
+          <div>
+            <p class="eyebrow">Meet the Baker</p>
+            <h2>The hands behind every layer.</h2>
+            <p>
+              Head baker Ananya spent years working in Bangalore kitchens before
+              training in Paris, and eventually returning home to build a cafe
+              that feels like a living room.
+            </p>
+          </div>
+          <div class="visit-details">
+            <div>
+              <h3>What she believes in</h3>
+              <p>
+                Butter over shortcuts, seasonal fruit over food colouring, and
+                coffee that is always freshly ground.
+              </p>
+            </div>
+            <div>
+              <h3>In the kitchen by</h3>
+              <p>
+                4:30am most mornings, laminating dough while the city is still
+                quiet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Éclair &amp; Crumb. All rights reserved.</p>
+        <p class="footnote">Handmade in small batches every morning.</p>
+        <a
+          href="https://instagram.com/eclairandcrumb"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Follow us on Instagram</a
+        >
+      </div>
+    </footer>
+
+    <script>
+      const yearSpan = document.getElementById("year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear().toString();
+      }
+    </script>
+  </body>
+</html>
+
